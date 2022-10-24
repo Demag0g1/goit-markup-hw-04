@@ -127,6 +127,7 @@ ul {
   align-items: center;
   margin-left: auto;
   text-align: center;
+  font-weight: 500;
 }
 
 .contacts.item {
@@ -142,24 +143,28 @@ ul {
   align-items: center;
 }
 
-.envelope {
+.address {
   display: flex;
   align-items: center;
-  content: "";
-  background-size: cover;
-  width: 16px;
-  height: 12px;
+  fill: currentColor;
+  flex-direction: row-reverse;
+}
+
+.envelope {
   margin-right: 10px;
 }
 
 .telephone {
-  display: flex;
   width: 10px;
   height: 16px;
   margin-right: 10px;
+}
+
+.phone {
+  display: flex;
   align-items: center;
-  content: "";
-  background-size: cover;
+  fill: currentColor;
+  flex-direction: row-reverse;
 }
 
 .contacts :focus,
@@ -253,16 +258,11 @@ h1 {
   color: var(--nav-color);
 }
 
-.about-img {
-  margin: 25px 100px;
-  width: 70px;
-  height: 70px;
-}
-
-.fone {
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
-  content: "";
-  width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -361,6 +361,7 @@ h1 {
   margin-right: 10px;
   width: 44px;
   height: 44px;
+  cursor: pointer;
   border-radius: 50%;
   fill: var(--text-color);
 }
@@ -370,6 +371,9 @@ h1 {
 }
 
 .social-link-icon {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   width: 20px;
   height: 20px;
 }
@@ -388,12 +392,8 @@ h1 {
   color: var(--nav-color);
 }
 
-.section.client {
-  display: flex;
-  fill: var(--text-color);
-}
-
 .partners {
+  fill: currentColor;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
@@ -431,7 +431,7 @@ h1 {
 
 .footer-adr {
   display: flex;
-  justify-content: baseline;
+  align-items: baseline;
 }
 
 .adr {
@@ -486,7 +486,6 @@ h1 {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-  margin-top: 12px;
 }
 
 .footer .social-link {
@@ -549,11 +548,6 @@ h1 {
   flex-wrap: wrap;
 }
 
-.project-img:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .project-img {
   margin-right: 30px;
   margin-bottom: 30px;
@@ -576,4 +570,13 @@ h1 {
 
 .portfolio-title {
   margin-bottom: 4px;
+}
+
+.project-card {
+  display: block;
+}
+
+.project-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
