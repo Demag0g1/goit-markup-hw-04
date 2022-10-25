@@ -485,6 +485,7 @@ h1 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+
   margin-bottom: 20px;
 }
 
@@ -520,6 +521,7 @@ h1 {
 .filter-btn {
   min-width: 38px;
   padding: 6px 22px;
+
   font-family: inherit;
   border-radius: 4px;
   font-weight: 500;
