@@ -379,7 +379,7 @@ h1 {
   fill: var(--link-color);
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .partners-link:focus,
